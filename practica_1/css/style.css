@@ -29,8 +29,8 @@ header {
 #division_articulos {
   background: chartreuse;
   width: 80%;
-  height: 50vh;
-  margin: 0px 5px;
+  height: 94vh;
+  margin: 7px 5px;
   float: left;
 }
 
@@ -55,19 +55,31 @@ h3 {
 aside {
   background: blue;
   width: 19%;
-  padding: 20px 0px;
+  height: 95vh;
   color: white;
-  margin-top: 10px;
+  margin-top: 1px;
   float: left;
   font-family: "Six Caps", sans-serif;
 }
 
 img {
   width: 18vw;
+  height: 25vh;
 }
 
 .publicidad {
   margin-top: 20px;
+  text-align: center;
+}
+
+.text_imagen {
+  border: 2px solid red;
+}
+
+footer {
+  background: black;
+  clear: both;
+  color: white;
   text-align: center;
 }
 
