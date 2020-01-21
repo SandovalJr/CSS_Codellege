@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Permanent+Marker|Russo+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 98%;
+  height: 20vh;
+  position: relative;
+  margin: 5px 10px 10px 10px;
+}
+
+#Titulo_General {
+  color: black;
+  background: lightgrey;
+  height: 20vh;
+  border: 1px solid black;
+  font-family: "Permanent Marker", cursive;
+  font-size: 80px;
+}
+
+#Titulo_Mente {
+  color: greenyellow;
+  background: lightgrey;
+  height: 20vh;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  -webkit-text-stroke: 2px green;
+  font-size: 60px;
+}
+
+#division_articulos {
+  background: chartreuse;
+  width: 79%;
+  height: 78vh;
+  margin: 0px 10px;
+  border: 1px solid black;
+  float: left;
+  padding: 5px 10px;
+}
+
+#imagen {
+  width: 45vw;
+  height: 52vh;
+}
+
+article {
+  color: white;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+.publicidad_1 {
+  margin-top: -5px;
+  margin-left: -6px;
+  background: greenyellow;
+  border: 1px solid black;
+  height: 16vh;
+  width: 17vw;
+}
+
+.publicidad_2 {
+  margin-top: 4px;
+  margin-left: -6px;
+  width: 17vw;
+  height: 42vh;
+  border: 1px solid black;
+  background: lightgrey;
+}
+
+aside {
+  width: 17%;
+  height: 76vh;
+  float: left;
+}
+
+#texto_1 {
+  width: 45%;
+  float: left;
+  text-align: left;
+  margin: 0px 10px 0px 0px;
+}
+
+#texto_2 {
+  width: 50%;
+  float: left;
+  text-align: justify;
+  margin: 0px 0px 10px 35px;
+}
+
+#texto_3 {
+  width: 30%;
+  text-align: justify;
+  margin: 25px 0px 0px 0px;
+  float: left;
+}
+
+#texto_4 {
+  width: 60%;
+  float: right;
+  margin: 10px 0px 0px 15px;
+}
+
+#ejemplo1 {
+  font-family: "Russo One", sans-serif;
+  width: 55%;
+  margin: 0px;
+  font-size: 30px;
+  color: black;
+  float: right;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
