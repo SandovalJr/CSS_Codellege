@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+    //background: black;
+    // Colores en Hexadecimal #numero de color 
+    
+    //colores en RGB
+     //background: rgb(215, 219, 214);
+    
+    display: flex;
+    //centrar horizontalmente
+    align-items: center;
+    //centrar verticalmente
+    justify-content: center;
+}
+
+.containter{
+    width: 360px;
+    height: 640px;
+    background: rgba(0, 0, 0, 0.1);
+margin-top: 100px;
+position: relative;
+
+//rotate eje x se maneja por grados 
+//scale es para la scala 
+// skew eje z se maneja en grados
+transform: rotate(-30deg) scale(.8) skew(25deg);
+}
+
+.containter img{
+width: 100%;
+position: absolute;
+//para que regrese a su estado base ya que es el estado inicial el cual tiene los elementos
+transition: 2s;
+}
+
+
+//contanedor DIV con hover que es el que permite que se levanten las imagenes
+//nth es como selecciona a un hijo y pones el numero 
+.containter:hover img:nth-child(4){
+transform: translate(160px,-160px);
+opacity: 1;
+//el tiempo que se tarda en llegar de una posicion a otra
+transition: 1s;
+}
+
+.containter:hover img:nth-child(3){
+transform: translate(120px,-120px);
+opacity: .8;
+transition: 2s;
+}
+.containter:hover img:nth-child(2){
+transform: translate(80px,-80px);
+opacity: .6;
+transition: 3s;
+}
+.containter:hover img:nth-child(1){
+transform: translate(40px,-40px);
+opacity: .4;
+transition: 4s;
+
+}
+
+
+
