@@ -1,0 +1,33 @@
+.flex-container{
+    background: dodgerblue;
+//se alineo de forma horizontal
+    display: flex;
+   // flex-direction: column-reverse;
+  // flex-wrap: wrap;
+ // flex-flow: column nowrap;
+height: 80vh;
+//para centrar horizontalmente 
+//justify-content:space-between;
+//align-items: flex-end;
+//space between solo pone separaciones de en medio 
+//space around deja espacios en medio de las separaciones
+
+border: 2px solid black;
+flex-wrap:wrap ;
+
+align-content: center;
+//align-content: flex-end;
+
+}
+
+.flex-container>div{
+    border: 1px solid black;
+    background: white;
+    width: 17%;
+    height: 17vh;
+    margin: 10px 5px;
+    font-size: 40px;
+    text-align: center;
+    //es para hacer crecer el ancho de la misma linea
+    line-height: 120px;
+}

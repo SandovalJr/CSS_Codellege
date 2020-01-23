@@ -1,0 +1,21 @@
+.flex-container {
+  background: dodgerblue;
+  display: flex;
+  height: 80vh;
+  border: 2px solid black;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.flex-container > div {
+  border: 1px solid black;
+  background: white;
+  width: 17%;
+  height: 17vh;
+  margin: 10px 5px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+}
+
+/*# sourceMappingURL=index.css.map */
