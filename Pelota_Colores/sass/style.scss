@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  //centrar horizontalmente
+  align-items: center;
+  //centrar verticalmente
+  justify-content: center;
+}
+
+.fondo_pelota {
+  background: black;
+  width: 90%;
+  height: 90vh;
+  position: relative;
+  border: 4px solid greenyellow;
+}
+
+.pelota {
+  width: 90px;
+  height: 90px;
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+  position: absolute;
+  animation: movimiento_pelota 4s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes movimiento_pelota {
+  0% {
+    background-color: blue;
+  }
+
+  10% {
+    background-color: #f26e0d;
+    margin-top: 42.5%;
+    margin-left: 20%;
+    animation-timing-function: linear;
+  }
+
+  20% {
+    background-color: yellow;
+    margin-top: 20%;
+    margin-left: 35%;
+    animation-timing-function: linear;
+  }
+
+  30% {
+    background-color: #f20df1;
+    margin-top: 42.5%;
+    margin-left: 45%;
+    animation-timing-function: linear;
+  }
+
+  40% {
+    background-color: chartreuse;
+    margin-top: 25%;
+    margin-left: 60%;
+    animation-timing-function: linear;
+  }
+
+  50% {
+    background-color: #2ff2e5;
+    margin-top: 42.5%;
+    margin-left: 75%;
+    animation-timing-function: linear;
+  }
+
+  60% {
+    margin-top: 42.5%;
+    margin-left: 93.5%;
+    background-color: greenyellow;
+    animation-timing-function: linear;
+  }
+  /*
+
+
+*/
+
+  /*---------------------------------------------------*/
+  /* 
+
+@keyframes movimiento_pelota{
+    0%{
+        background-color: blue;
+        
+     }
+
+     20%{
+         background-color: #F26E0D;
+         margin-top: 42.5%;
+         margin-left: 20%;
+     
+     } 
+ 
+     40%{
+         background-color: yellow;
+         margin-top: 20%;
+         margin-left: 35%;
+     }
+
+     60%{
+background-color: #F20DF1;
+margin-top: 42.5%;
+margin-left: 45%;
+     }
+
+
+     70%{
+background-color: chartreuse;
+margin-top: 25%;
+margin-left: 60%;
+
+     }
+
+     85%{
+         background-color: #2FF2E5;
+         margin-top: 42.5%;
+         margin-left: 75%;  
+     }
+
+
+     100%{
+         margin-top:42.5% ;
+margin-left: 93.5%;
+background-color: greenyellow;
+    }
+
+}
+
+*/
+}
