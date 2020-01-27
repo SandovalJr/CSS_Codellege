@@ -182,8 +182,8 @@ header {
   display: flex;
 }
 
+// INICIA SEPACION 3
 #separaciones > #separacion3 {
-  background-image: url(../img/separado_1.PNG);
   width: 23%;
   height: 65vh;
   background-size: cover;
@@ -191,6 +191,33 @@ header {
   margin: 30px 0px 0px 28px;
   display: flex;
 }
+
+
+// para afectar a las hijas del contenedor que se llamen row
+.separacion3>.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  }
+  
+  
+  img{
+      width: 20vw;
+      height: 21.2vh;
+      //para convertir la imagen en tipo bloque 
+      display: block;
+      border: 2px solid #ffffff;
+  
+      opacity: .5;
+  }
+  
+  
+  img:hover{
+      opacity: .9;
+      transition: .5s;
+  
+  }
+  
 
 #separaciones > #separacion4 {
   background-image: url(../img/hoja.jpg);

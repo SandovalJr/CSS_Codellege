@@ -182,13 +182,31 @@ header {
 }
 
 #separaciones > #separacion3 {
-  background-image: url(../img/separado_1.PNG);
   width: 23%;
   height: 65vh;
   background-size: cover;
   background-position: center center;
   margin: 30px 0px 0px 28px;
   display: flex;
+}
+
+.separacion3 > .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 20vw;
+  height: 21.2vh;
+  display: block;
+  border: 2px solid #ffffff;
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 0.9;
+  transition: 0.5s;
 }
 
 #separaciones > #separacion4 {
