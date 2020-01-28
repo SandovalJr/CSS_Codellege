@@ -20,7 +20,7 @@ body {
   //para el 50% a pixeles para poderle restar los 200
   top: calc(50% - 200px);
   left: calc(50% - 200px);
-  animation: rotator .5s linear infinite ;
+  animation: rotator 4s linear infinite ;
   transform-style: preserve-3d;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .background .rotate .sphere span {
-  background: radial-gradient(rgb(7, 11, 241), greenyellow , red,purple);
+  background: radial-gradient(rgb(7, 11, 241), greenyellow,red),blue;
   width: 100%;
   height: 100%;
   position: absolute;
