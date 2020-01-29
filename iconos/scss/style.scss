@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  //horizontalmente centra
+  justify-content: center;
+  //verticalmente centra
+  align-items: center;
+
+  font-family: serif;
+}
+
+.container {
+  width: 900px;
+  //default es en row osea linea
+  display: flex;
+  //toma el restante para acomodarlo en partes iguales
+  justify-content: space-between;
+}
+
+.container .box {
+  text-align: center;
+}
+
+.container .box .icon .fa {
+  font-size: 80px;
+  //es para cuando pasemos por el icono se ponga una manita
+  cursor: pointer;
+}
+.container .box .icon h4,
+.container .box .icon h3 {
+  font-weight: 400px;
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 24px;
+  position: relative;
+  //ocultar lo que sobre salga
+  overflow: hidden;
+  color: transparent;
+  //es para que cuando las barras pasen posteriormente se ponga el texto
+  transition-delay: 0.33s;
+}
+.container .box .fa:hover ~ h4,
+.container .box .fa:hover ~ h3 {
+  color: black;
+}
+
+.container .box .icon h4::before {
+  //SIEMPRE DEBE IR
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  background: #00bcd4;
+  transition: 1s;
+}
+
+.container .box .icon h3::before {
+  content: "";
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 100%;
+  background: #9c27b0;
+  transition: 1s;
+}
+
+//afectar al before del h4 que tiene que ser hermano del fa
+//para que el hover se active cuando se pase el cursor por el icono
+.container .box .fa:hover ~ h3::before {
+  right: -100%;
+}
+
+.container .box .fa:hover ~ h4::before {
+  left: -100%;
+}
