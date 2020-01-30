@@ -8,7 +8,7 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-    background: #000000;
+    background: black;
     display: flex;
    flex-direction: column;
    justify-content:space-around;
@@ -23,20 +23,45 @@ display: flex;
 justify-content: space-around;
 }
 
-
-img{
+.container > .row > div{
     width: 20vw;
     height: 25vh;
+    border: 2px solid #ffffff;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
     //para convertir la imagen en tipo bloque 
     display: block;
     border: 2px solid #ffffff;
-
-    opacity: .5;
+    opacity: 1;
 }
 
+.container .row div span{
+     display: block;
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+text-align: center;
+//PARA QUE ESTE OCULTO
+visibility: hidden;
+font-size: 30PX;
+color: white;
+ }
 
-img:hover{
-    opacity: .9;
+ span::after{
+     content: attr('data-text');
+ }
+
+
+.container> .row > div:hover >img{
+    opacity: .3;
     transition: .5s;
 
+}
+.container> .row > div:hover >span{
+   visibility: visible;
 }

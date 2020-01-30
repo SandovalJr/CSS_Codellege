@@ -8,7 +8,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background: #000000;
+  background: black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,17 +20,44 @@ body {
   justify-content: space-around;
 }
 
-img {
+.container > .row > div {
   width: 20vw;
   height: 25vh;
-  display: block;
   border: 2px solid #ffffff;
-  opacity: 0.5;
+  position: relative;
 }
 
-img:hover {
-  opacity: 0.9;
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid #ffffff;
+  opacity: 1;
+}
+
+.container .row div span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30PX;
+  color: white;
+}
+
+span::after {
+  content: attr("data-text");
+}
+
+.container > .row > div:hover > img {
+  opacity: 0.3;
   transition: 0.5s;
+}
+
+.container > .row > div:hover > span {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
