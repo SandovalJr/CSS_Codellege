@@ -18,6 +18,7 @@ overflow: hidden;
     animation: spin .5s linear infinite;
 
 }
+
 .loader::after{
     content: '';
     position: absolute;
