@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Six+Caps&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#Titulo {
+  color: #0000ff;
+  background: #000000;
+  border: 3px solid greenyellow;
+  font-family: "Bangers", cursive;
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#division_articulos {
+  background: greenyellow;
+  width: 80%;
+  height: 94vh;
+  margin: 7px 5px;
+  float: left;
+}
+
+article {
+  background: red;
+  margin-top: 10px;
+}
+article h3 {
+  text-align: center;
+  font-family: "Bangers", cursive;
+}
+article .parrafoArticulo {
+  text-align: justify;
+  padding: 30px 10px;
+  font-family: "Six Caps", sans-serif;
+  border: 2px dotted yellow;
+  font-size: 25px;
+}
+
+aside {
+  background: blue;
+  width: 19%;
+  height: 95vh;
+  color: white;
+  margin-top: 1px;
+  float: left;
+  font-family: "Six Caps", sans-serif;
+}
+aside .publicidad {
+  margin-top: 20px;
+  text-align: center;
+}
+aside .text_imagen {
+  border: 2px solid red;
+}
+
+img {
+  width: 18vw;
+  height: 25vh;
+}
+
+footer {
+  background: black;
+  clear: both;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
