@@ -2,11 +2,12 @@
 $amarillo_menu: #edcd1f;
 $azul_pagina: #1e2d3b;
 $blanco_pagina: #ffffff;
+$gris_pagina: #c6c6c6;
 * {
   margin: 0px;
   padding: 0px;
 }
-header{
+header {
   width: 100%;
   height: 20%;
 }
@@ -65,23 +66,22 @@ header{
   }
 }
 
-
 // INICIA LA PARTE DEL VIDEO
 
 body #video {
   & section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: white;
-    
+
     //TAMAÑO DEL VIDEO
     & video {
       width: 100%;
       object-fit: cover;
       height: 90%;
     }
-    
-    &  h1 {
+
+    & h1 {
       margin: 0;
       padding: 0;
       color: white;
@@ -92,15 +92,15 @@ body #video {
       margin: 0% 0% 0% 25%;
       text-align: center;
       text-shadow: -2px -2px 2px $azul_pagina;
-  
+
       & #flecha {
         display: block;
-        & .fa{
+        & .fa {
           color: $amarillo_menu;
           font-size: 50px;
         }
       }
-  
+
       & span {
         display: inline-block;
         font-family: "Roboto", sans-serif;
@@ -109,4 +109,45 @@ body #video {
       }
     }
   }
+}
+
+#servicios {
+  & section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
   }
+  & .sec1 {
+    background: url("../../SCROLL/img/ciudades/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    //es para que el bloque se quede estatico y se pueda mover
+    background-attachment: fixed;
+  }
+  & .secText {
+    padding: 50px 100px;
+    width: 100%;
+    height: 100vh;
+    & #servicios_texto {
+      display: block;
+      margin: -3.9% 30%;
+      & h1 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 60px;
+        color: $gris_pagina;
+      }
+    }
+    & #linea {
+      display: inline-block;
+      padding: 0.4% 4%;
+      margin: 4.2% 0% 0% 46%;
+      background: $amarillo_menu;
+    }
+  }
+
+  // el mayor se pone para que solo afecte a los hijos del sectext
+}
