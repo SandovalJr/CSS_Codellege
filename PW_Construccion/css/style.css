@@ -30,7 +30,7 @@ header {
   display: block;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
-  margin: -20% 0% 0% 29%;
+  margin: -21.5% 0% 0% 29%;
 }
 #logos > .logo #construcciones {
   display: block;
@@ -62,13 +62,13 @@ header {
 
 body #video section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: white;
 }
 body #video section video {
   width: 100%;
   object-fit: cover;
-  height: 90%;
+  height: 90vh;
 }
 body #video section h1 {
   margin: 0;
@@ -101,11 +101,20 @@ body #video section h1 span {
   box-sizing: border-box;
 }
 #servicios .sec1 {
-  background: url("../../SCROLL/img/ciudades/1.jpg");
+  background: url("../../PW_ForumRevista/img/ciudad.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+#servicios .sec1 #nosotros_fondo {
+  width: 50%;
+  height: 50vh;
+  background: #ffffff;
+  float: left;
+  margin: 0%;
+  border: 50px solid #ffffff;
+  border-bottom: 327.5px solid #ffffff;
 }
 #servicios .secText {
   padding: 50px 100px;
@@ -114,7 +123,7 @@ body #video section h1 span {
 }
 #servicios .secText #servicios_texto {
   display: block;
-  margin: -3.9% 30%;
+  margin: 4% 30%;
 }
 #servicios .secText #servicios_texto h1 {
   text-align: center;
@@ -127,8 +136,113 @@ body #video section h1 span {
 #servicios .secText #linea {
   display: inline-block;
   padding: 0.4% 4%;
-  margin: 4.2% 0% 0% 46%;
+  margin: -50% 0% 4% 46%;
   background: #edcd1f;
+}
+#servicios #separaciones {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#servicios #separaciones #separacion1 {
+  width: 23%;
+  height: 65vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+#servicios #separaciones #separacion1 #imagen {
+  display: block;
+  margin: -65% 0% 0% 70%;
+}
+#servicios #separaciones #separacion1 #imagen h1 {
+  text-align: justify;
+  padding: 20px;
+  color: #1e2d3b;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+}
+#servicios #separaciones #separacion1 #imagen p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 20px 35px 20px;
+  background: #f7f7f7;
+}
+#servicios #separaciones #separacion1 img {
+  width: 20vw;
+  height: 30vh;
+  display: block;
+  border: 2px solid #f7f7f7;
+}
+#servicios #separaciones #separacion2 {
+  width: 23%;
+  height: 65vh;
+  background-size: cover;
+  background-position: center center;
+  margin: 30px 0px 0px 28px;
+  display: flex;
+}
+#servicios #separaciones #separacion2 #imagen {
+  display: block;
+  margin: -65% 0% 0% 10%;
+}
+#servicios #separaciones #separacion2 h1 {
+  text-align: justify;
+  padding: 20px;
+  color: #1e2d3b;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+}
+#servicios #separaciones #separacion2 p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 20px 36px 20px;
+  background: #f7f7f7;
+}
+#servicios #separaciones #separacion2 img {
+  width: 20vw;
+  height: 30vh;
+  display: block;
+  border: 1px solid #f7f7f7;
+}
+#servicios #separaciones #separacion3 {
+  width: 23%;
+  height: 65vh;
+  background-size: cover;
+  background-position: center center;
+  margin: 30px 0px 0px 28px;
+  display: flex;
+}
+#servicios #separaciones #separacion3 #imagen {
+  display: block;
+  margin: -65% 0% 0% -50%;
+}
+#servicios #separaciones #separacion3 img {
+  width: 20vw;
+  height: 30vh;
+  display: block;
+  border: 2px solid #f7f7f7;
+}
+#servicios #separaciones #separacion3 #text {
+  width: 20.2vw;
+  height: 30vh;
+  display: block;
+}
+#servicios #separaciones #separacion3 #text h1 {
+  text-align: justify;
+  padding: 20px;
+  color: #1e2d3b;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+}
+#servicios #separaciones #separacion3 #text p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 20px 36px 20px;
+  background: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */

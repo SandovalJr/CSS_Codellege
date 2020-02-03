@@ -3,6 +3,7 @@ $amarillo_menu: #edcd1f;
 $azul_pagina: #1e2d3b;
 $blanco_pagina: #ffffff;
 $gris_pagina: #c6c6c6;
+$b_gris_pagina: #f7f7f7;
 * {
   margin: 0px;
   padding: 0px;
@@ -34,7 +35,7 @@ header {
     font-size: 24px;
     font-family: "Oswald", sans-serif;
 
-    margin: -20% 0% 0% 29%;
+    margin: -21.5% 0% 0% 29%;
   }
 
   & #construcciones {
@@ -71,14 +72,14 @@ header {
 body #video {
   & section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: white;
 
     //TAMAÑO DEL VIDEO
     & video {
       width: 100%;
       object-fit: cover;
-      height: 90%;
+      height: 90vh;
     }
 
     & h1 {
@@ -118,20 +119,36 @@ body #video {
     box-sizing: border-box;
   }
   & .sec1 {
-    background: url("../../SCROLL/img/ciudades/1.jpg");
+    background: url("../../PW_ForumRevista/img/ciudad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     //es para que el bloque se quede estatico y se pueda mover
     background-attachment: fixed;
+    & #nosotros_fondo{
+      width: 50%;
+      height: 50vh;
+      background: $blanco_pagina;
+      float: left;
+      margin: 0% ;
+      border: 50px solid $blanco_pagina;
+      border-bottom: 327.5px solid $blanco_pagina;
+    }
   }
+  
+// SEPARACION DE NOSOTROS
+#Nosotros{
+ & #nosotros_fondo{
+
+  }
+}
   & .secText {
     padding: 50px 100px;
     width: 100%;
     height: 100vh;
     & #servicios_texto {
       display: block;
-      margin: -3.9% 30%;
+      margin: 4% 30%;
       & h1 {
         text-align: center;
         margin: 0;
@@ -144,10 +161,122 @@ body #video {
     & #linea {
       display: inline-block;
       padding: 0.4% 4%;
-      margin: 4.2% 0% 0% 46%;
+      margin: -50% 0% 4% 46%;
       background: $amarillo_menu;
     }
   }
+  // Empezamos con el flex box
+  #separaciones {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-  // el mayor se pone para que solo afecte a los hijos del sectext
+    & #separacion1 {
+      width: 23%;
+      height: 65vh;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      & #imagen {
+        display: block;
+        margin: -65% 0% 0% 70%;
+        & h1 {
+          text-align: justify;
+          padding: 20px;
+          color: $azul_pagina;
+          font-family: "Roboto", sans-serif;
+          background: $b_gris_pagina;
+        }
+
+        & p {
+          text-align: justify;
+          font-family: "Roboto", sans-serif;
+          padding: 0px 20px 35px 20px;
+          background: $b_gris_pagina;
+        }
+      }
+      & img {
+        width: 20vw;
+        height: 30vh;
+        //para convertir la imagen en tipo bloque
+        display: block;
+        border: 2px solid $b_gris_pagina;
+      }
+    }
+    & #separacion2 {
+      width: 23%;
+      height: 65vh;
+      background-size: cover;
+      background-position: center center;
+      margin: 30px 0px 0px 28px;
+      display: flex;
+      & #imagen {
+        display: block;
+        margin: -65% 0% 0% 10%;
+      }
+      & h1 {
+        text-align: justify;
+        padding: 20px;
+        color: $azul_pagina;
+        font-family: "Roboto", sans-serif;
+        background: $b_gris_pagina;
+      }
+
+      & p {
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+        padding: 0px 20px 36px 20px;
+        background: $b_gris_pagina;
+      }
+      & img {
+        width: 20vw;
+        height: 30vh;
+        //para convertir la imagen en tipo bloque
+        display: block;
+        border: 1px solid $b_gris_pagina;
+      }
+    }
+    & #separacion3 {
+      width: 23%;
+      height: 65vh;
+      background-size: cover;
+      background-position: center center;
+      margin: 30px 0px 0px 28px;
+      display: flex;
+      & #imagen {
+        display: block;
+        margin: -65% 0% 0% -50%;
+      }
+
+      & img {
+        width: 20vw;
+        height: 30vh;
+        //para convertir la imagen en tipo bloque
+        display: block;
+        border: 2px solid $b_gris_pagina;
+      }
+      & #text {
+        width: 20.2vw;
+        height: 30vh;
+        display: block;
+        & h1 {
+          text-align: justify;
+          padding: 20px;
+          color: $azul_pagina;
+          font-family: "Roboto", sans-serif;
+          background: $b_gris_pagina;
+        }
+
+        & p {
+          text-align: justify;
+          font-family: "Roboto", sans-serif;
+          padding: 0px 20px 36px 20px;
+          background: $b_gris_pagina;
+        }
+      }
+    }
+  }
 }
