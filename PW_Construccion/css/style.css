@@ -60,6 +60,9 @@ header {
   text-decoration: none;
   font-size: 15px;
 }
+#menu .botones a:hover {
+  color: #edcd1f;
+}
 
 body #video section {
   width: 100%;
@@ -385,11 +388,10 @@ body #video section h1 span {
 }
 
 #Proyectos {
-  width: 100vw;
-  height: 170vh;
+  width: 98.9vw;
+  height: 200vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background: transparent;
 }
 #Proyectos .secText_1 {
@@ -416,12 +418,14 @@ body #video section h1 span {
 #Proyectos .row {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 #Proyectos .row div {
   position: relative;
 }
 #Proyectos .row div img {
+  width: 90%;
+  height: 95%;
   display: block;
   opacity: 1;
 }
@@ -435,6 +439,7 @@ body #video section h1 span {
   visibility: hidden;
   font-size: 30px;
   color: #1e2d3b;
+  font-family: "Oswald", sans-serif;
 }
 #Proyectos .row div span::after {
   content: attr("data-text");
@@ -445,6 +450,17 @@ body #video section h1 span {
 }
 #Proyectos div:hover > span {
   visibility: visible;
+}
+
+#f_clientes #Clientes {
+  width: 100%;
+  height: 40vh;
+  background: #f7f7f7;
+}
+#f_clientes #Clientes #texto_proyecto h1 {
+  color: #c6c6c6;
+  font-family: "Oswald";
+  font-size: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

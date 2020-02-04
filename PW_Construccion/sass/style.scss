@@ -64,6 +64,9 @@ header {
       text-decoration: none;
       font-size: 15px;
     }
+    & a:hover{
+color: $amarillo_menu;
+    }
   }
 }
 
@@ -142,16 +145,16 @@ body #video {
         margin-top: 7%;
         background: $b_gris_pagina;
       }
-      & #linea_nosotros{
+      & #linea_nosotros {
         display: inline-block;
-      padding: .7% 8%;
-      margin: 0% 0% 4% 41%;
-      background: $amarillo_menu;
+        padding: 0.7% 8%;
+        margin: 0% 0% 4% 41%;
+        background: $amarillo_menu;
       }
-      & #texto_nosotros{
+      & #texto_nosotros {
         display: inline-block;
         margin: 5% 5% 0% 40%;
-        & p{
+        & p {
           font-size: 17px;
           color: black;
           font-family: "Roboto";
@@ -300,131 +303,123 @@ body #video {
   }
 }
 
-#separacion_amarilla{
-  #fondo_amarillo{
-width: 100%;
-height: 30%;
-   background: $amarillo_menu;
-  
-  & #año_2003{
-    width: 20%;
-    height: 30vh;
-    display: block;
-    padding-top: 1%;
-    margin-left: 7%;
-    & h1{
-      text-align: center;
-      font-family: "Oswald", sans-serif;
-      font-size: 59px;
-      color: white;
-      margin-left: 40%;
+#separacion_amarilla {
+  #fondo_amarillo {
+    width: 100%;
+    height: 30%;
+    background: $amarillo_menu;
 
-    }
-    & p {
-      text-align: center;
-      font-family: "Oswald", sans-serif;
-      color: $azul_pagina;
-      font-size: 25px;
-      margin-top: -10px;
-      margin-left: 40%;
-     
-    }
-    & #img_1{
+    & #año_2003 {
+      width: 20%;
+      height: 30vh;
       display: block;
-      margin-top: -69%;
-      margin-left: 105%;
+      padding-top: 1%;
+      margin-left: 7%;
+      & h1 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 59px;
+        color: white;
+        margin-left: 40%;
+      }
+      & p {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        color: $azul_pagina;
+        font-size: 25px;
+        margin-top: -10px;
+        margin-left: 40%;
+      }
+      & #img_1 {
+        display: block;
+        margin-top: -69%;
+        margin-left: 105%;
+      }
     }
-  }
 
-& #numero_206{
-  display: block;
-  background: $amarillo_menu;
-  padding-bottom: 4%;
-  margin-left: -90%;
-  margin-top: -15%;
-  & h1{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 59px;
-    color: white;
-    padding-bottom: 3%;
-    margin-left: 34%;
-
-  }
-  & p {
-    font-family: "Oswald", sans-serif;
-    color: $azul_pagina;
-    text-align: center;
-    font-size: 25px;
-    margin-top: -3%;
-    margin-left: 35%;
-   
-  }
-& #img_2{
-  display: block;
-  margin-top: -5.2%;
-  margin-left: 15%;
-}
-}
-
-& #numero_871{
-  display: block;
-  background: $amarillo_menu;
-  padding-bottom: 4%;
-  margin-left: -10%;
-  margin-top: -13%;
-  & h1{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 59px;
-    color: white;
-    padding-bottom: 3%;
-    margin-left: 23%;
-
-  }
-  & p {
-    font-family: "Oswald", sans-serif;
-    color: $azul_pagina;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 24%;
-    margin-top: -3%;
-      & #img_3{
+    & #numero_206 {
       display: block;
-      margin-top: -8%;
-      margin-left: 25%;
+      background: $amarillo_menu;
+      padding-bottom: 4%;
+      margin-left: -90%;
+      margin-top: -15%;
+      & h1 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 59px;
+        color: white;
+        padding-bottom: 3%;
+        margin-left: 34%;
+      }
+      & p {
+        font-family: "Oswald", sans-serif;
+        color: $azul_pagina;
+        text-align: center;
+        font-size: 25px;
+        margin-top: -3%;
+        margin-left: 35%;
+      }
+      & #img_2 {
+        display: block;
+        margin-top: -5.2%;
+        margin-left: 15%;
+      }
+    }
+
+    & #numero_871 {
+      display: block;
+      background: $amarillo_menu;
+      padding-bottom: 4%;
+      margin-left: -10%;
+      margin-top: -13%;
+      & h1 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 59px;
+        color: white;
+        padding-bottom: 3%;
+        margin-left: 23%;
+      }
+      & p {
+        font-family: "Oswald", sans-serif;
+        color: $azul_pagina;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 24%;
+        margin-top: -3%;
+        & #img_3 {
+          display: block;
+          margin-top: -8%;
+          margin-left: 25%;
+        }
+      }
+    }
+
+    & #premios_numero {
+      display: block;
+      background: $amarillo_menu;
+      padding-bottom: 4%;
+      margin-left: -15%;
+      margin-top: -12%;
+      & h1 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 59px;
+        color: white;
+        padding-bottom: 3%;
+        margin-left: 60%;
+        margin-top: -11.4%;
+      }
+      & p {
+        font-family: "Oswald", sans-serif;
+        color: $azul_pagina;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 60%;
+        margin-top: -4%;
+      }
     }
   }
-}
-
-& #premios_numero{
-  display: block;
-  background: $amarillo_menu;
-  padding-bottom: 4%;
-  margin-left: -15%;
-  margin-top: -12%;
-  & h1{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 59px;
-    color: white;
-    padding-bottom: 3%;
-    margin-left: 60%;
-    margin-top: -11.4%;
-
-  }
-  & p {
-    font-family: "Oswald", sans-serif;
-    color: $azul_pagina;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 60%;
-    margin-top: -4%;
-   
-  }
-}
-
-}
 }
 
 #Proyectos {
@@ -434,11 +429,10 @@ height: 30%;
     height: 170vh;
   }
 
-  width: 100vw;
-  height: 170vh;
+  width: 98.9vw;
+  height: 200vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background: transparent;
 
   & #texto_proyecto {
@@ -461,11 +455,14 @@ height: 30%;
   & .row {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     & div {
       position: relative;
+
       & img {
+        width: 90%;
+        height: 95%;
         //para convertir la imagen en tipo bloque
         display: block;
         opacity: 1;
@@ -482,6 +479,7 @@ height: 30%;
         visibility: hidden;
         font-size: 30px;
         color: $azul_pagina;
+        font-family: "Oswald", sans-serif;
       }
 
       & span::after {
@@ -498,4 +496,21 @@ height: 30%;
   & div:hover > span {
     visibility: visible;
   }
+}
+
+#f_clientes{
+  & #Clientes{
+    width: 100%;
+    height: 40vh;
+    background: $b_gris_pagina;
+& #texto_proyecto{
+
+  & h1{
+    color: $gris_pagina;
+    font-family: "Oswald";
+    font-size: 70px;
+  }
+}
+    }
+  
 }
