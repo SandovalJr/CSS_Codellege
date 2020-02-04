@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap");
 * {
   margin: 0px;
@@ -110,11 +111,36 @@ body #video section h1 span {
 #servicios .sec1 #nosotros_fondo {
   width: 50%;
   height: 50vh;
-  background: #ffffff;
+  background: #f7f7f7;
   float: left;
   margin: 0%;
-  border: 50px solid #ffffff;
-  border-bottom: 327.5px solid #ffffff;
+  border: 50px solid #f7f7f7;
+  border-bottom: 327.5px solid #f7f7f7;
+}
+#servicios .sec1 #nosotros_fondo #titulo_nosotros {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  color: #c6c6c6;
+  font-size: 75px;
+  margin-left: 40%;
+  margin-top: 7%;
+  background: #f7f7f7;
+}
+#servicios .sec1 #nosotros_fondo #linea_nosotros {
+  display: inline-block;
+  padding: 0.7% 8%;
+  margin: 0% 0% 4% 41%;
+  background: #edcd1f;
+}
+#servicios .sec1 #nosotros_fondo #texto_nosotros {
+  display: inline-block;
+  margin: 5% 5% 0% 40%;
+}
+#servicios .sec1 #nosotros_fondo #texto_nosotros p {
+  font-size: 17px;
+  color: black;
+  font-family: "Roboto";
+  text-align: justify;
 }
 #servicios .secText {
   padding: 50px 100px;
@@ -243,6 +269,182 @@ body #video section h1 span {
   font-family: "Roboto", sans-serif;
   padding: 0px 20px 36px 20px;
   background: #f7f7f7;
+}
+
+#separacion_amarilla #fondo_amarillo {
+  width: 100%;
+  height: 30%;
+  background: #edcd1f;
+}
+#separacion_amarilla #fondo_amarillo #año_2003 {
+  width: 20%;
+  height: 30vh;
+  display: block;
+  padding-top: 1%;
+  margin-left: 7%;
+}
+#separacion_amarilla #fondo_amarillo #año_2003 h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 59px;
+  color: white;
+  margin-left: 40%;
+}
+#separacion_amarilla #fondo_amarillo #año_2003 p {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #1e2d3b;
+  font-size: 25px;
+  margin-top: -10px;
+  margin-left: 40%;
+}
+#separacion_amarilla #fondo_amarillo #año_2003 #img_1 {
+  display: block;
+  margin-top: -69%;
+  margin-left: 105%;
+}
+#separacion_amarilla #fondo_amarillo #numero_206 {
+  display: block;
+  background: #edcd1f;
+  padding-bottom: 4%;
+  margin-left: -90%;
+  margin-top: -15%;
+}
+#separacion_amarilla #fondo_amarillo #numero_206 h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 59px;
+  color: white;
+  padding-bottom: 3%;
+  margin-left: 34%;
+}
+#separacion_amarilla #fondo_amarillo #numero_206 p {
+  font-family: "Oswald", sans-serif;
+  color: #1e2d3b;
+  text-align: center;
+  font-size: 25px;
+  margin-top: -3%;
+  margin-left: 35%;
+}
+#separacion_amarilla #fondo_amarillo #numero_206 #img_2 {
+  display: block;
+  margin-top: -5.2%;
+  margin-left: 15%;
+}
+#separacion_amarilla #fondo_amarillo #numero_871 {
+  display: block;
+  background: #edcd1f;
+  padding-bottom: 4%;
+  margin-left: -10%;
+  margin-top: -13%;
+}
+#separacion_amarilla #fondo_amarillo #numero_871 h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 59px;
+  color: white;
+  padding-bottom: 3%;
+  margin-left: 23%;
+}
+#separacion_amarilla #fondo_amarillo #numero_871 p {
+  font-family: "Oswald", sans-serif;
+  color: #1e2d3b;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 24%;
+  margin-top: -3%;
+}
+#separacion_amarilla #fondo_amarillo #numero_871 p #img_3 {
+  display: block;
+  margin-top: -8%;
+  margin-left: 25%;
+}
+#separacion_amarilla #fondo_amarillo #premios_numero {
+  display: block;
+  background: #edcd1f;
+  padding-bottom: 4%;
+  margin-left: -15%;
+  margin-top: -12%;
+}
+#separacion_amarilla #fondo_amarillo #premios_numero h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 59px;
+  color: white;
+  padding-bottom: 3%;
+  margin-left: 60%;
+  margin-top: -11.4%;
+}
+#separacion_amarilla #fondo_amarillo #premios_numero p {
+  font-family: "Oswald", sans-serif;
+  color: #1e2d3b;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 60%;
+  margin-top: -4%;
+}
+
+#Proyectos {
+  width: 100vw;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: transparent;
+}
+#Proyectos .secText_1 {
+  padding: 50px 100px;
+  width: 100%;
+  height: 170vh;
+}
+#Proyectos #texto_proyecto {
+  display: block;
+}
+#Proyectos #texto_proyecto h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  color: #c6c6c6;
+  text-align: center;
+  margin-top: 3%;
+}
+#Proyectos #linea_proyectos {
+  display: inline-block;
+  padding: 0.3% 4%;
+  margin: 0% 0% 4% 46%;
+  background: #edcd1f;
+}
+#Proyectos .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#Proyectos .row div {
+  position: relative;
+}
+#Proyectos .row div img {
+  display: block;
+  opacity: 1;
+}
+#Proyectos .row div span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
+  color: #1e2d3b;
+}
+#Proyectos .row div span::after {
+  content: attr("data-text");
+}
+#Proyectos div:hover > img {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+#Proyectos div:hover > span {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

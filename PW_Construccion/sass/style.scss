@@ -125,23 +125,42 @@ body #video {
     background-position: center center;
     //es para que el bloque se quede estatico y se pueda mover
     background-attachment: fixed;
-    & #nosotros_fondo{
+    & #nosotros_fondo {
       width: 50%;
       height: 50vh;
-      background: $blanco_pagina;
+      background: $b_gris_pagina;
       float: left;
-      margin: 0% ;
-      border: 50px solid $blanco_pagina;
-      border-bottom: 327.5px solid $blanco_pagina;
+      margin: 0%;
+      border: 50px solid $b_gris_pagina;
+      border-bottom: 327.5px solid $b_gris_pagina;
+      & #titulo_nosotros {
+        display: inline-block;
+        font-family: "Oswald", sans-serif;
+        color: $gris_pagina;
+        font-size: 75px;
+        margin-left: 40%;
+        margin-top: 7%;
+        background: $b_gris_pagina;
+      }
+      & #linea_nosotros{
+        display: inline-block;
+      padding: .7% 8%;
+      margin: 0% 0% 4% 41%;
+      background: $amarillo_menu;
+      }
+      & #texto_nosotros{
+        display: inline-block;
+        margin: 5% 5% 0% 40%;
+        & p{
+          font-size: 17px;
+          color: black;
+          font-family: "Roboto";
+          text-align: justify;
+        }
+      }
     }
   }
-  
-// SEPARACION DE NOSOTROS
-#Nosotros{
- & #nosotros_fondo{
 
-  }
-}
   & .secText {
     padding: 50px 100px;
     width: 100%;
@@ -278,5 +297,205 @@ body #video {
         }
       }
     }
+  }
+}
+
+#separacion_amarilla{
+  #fondo_amarillo{
+width: 100%;
+height: 30%;
+   background: $amarillo_menu;
+  
+  & #año_2003{
+    width: 20%;
+    height: 30vh;
+    display: block;
+    padding-top: 1%;
+    margin-left: 7%;
+    & h1{
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 59px;
+      color: white;
+      margin-left: 40%;
+
+    }
+    & p {
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      color: $azul_pagina;
+      font-size: 25px;
+      margin-top: -10px;
+      margin-left: 40%;
+     
+    }
+    & #img_1{
+      display: block;
+      margin-top: -69%;
+      margin-left: 105%;
+    }
+  }
+
+& #numero_206{
+  display: block;
+  background: $amarillo_menu;
+  padding-bottom: 4%;
+  margin-left: -90%;
+  margin-top: -15%;
+  & h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 59px;
+    color: white;
+    padding-bottom: 3%;
+    margin-left: 34%;
+
+  }
+  & p {
+    font-family: "Oswald", sans-serif;
+    color: $azul_pagina;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -3%;
+    margin-left: 35%;
+   
+  }
+& #img_2{
+  display: block;
+  margin-top: -5.2%;
+  margin-left: 15%;
+}
+}
+
+& #numero_871{
+  display: block;
+  background: $amarillo_menu;
+  padding-bottom: 4%;
+  margin-left: -10%;
+  margin-top: -13%;
+  & h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 59px;
+    color: white;
+    padding-bottom: 3%;
+    margin-left: 23%;
+
+  }
+  & p {
+    font-family: "Oswald", sans-serif;
+    color: $azul_pagina;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 24%;
+    margin-top: -3%;
+      & #img_3{
+      display: block;
+      margin-top: -8%;
+      margin-left: 25%;
+    }
+  }
+}
+
+& #premios_numero{
+  display: block;
+  background: $amarillo_menu;
+  padding-bottom: 4%;
+  margin-left: -15%;
+  margin-top: -12%;
+  & h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 59px;
+    color: white;
+    padding-bottom: 3%;
+    margin-left: 60%;
+    margin-top: -11.4%;
+
+  }
+  & p {
+    font-family: "Oswald", sans-serif;
+    color: $azul_pagina;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 60%;
+    margin-top: -4%;
+   
+  }
+}
+
+}
+}
+
+#Proyectos {
+  & .secText_1 {
+    padding: 50px 100px;
+    width: 100%;
+    height: 170vh;
+  }
+
+  width: 100vw;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: transparent;
+
+  & #texto_proyecto {
+    display: block;
+    & h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: 60px;
+      color: $gris_pagina;
+      text-align: center;
+      margin-top: 3%;
+    }
+  }
+  & #linea_proyectos {
+    display: inline-block;
+    padding: 0.3% 4%;
+    margin: 0% 0% 4% 46%;
+    background: $amarillo_menu;
+  }
+
+  & .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    & div {
+      position: relative;
+      & img {
+        //para convertir la imagen en tipo bloque
+        display: block;
+        opacity: 1;
+      }
+
+      & span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        //PARA QUE ESTE OCULTO
+        visibility: hidden;
+        font-size: 30px;
+        color: $azul_pagina;
+      }
+
+      & span::after {
+        content: attr("data-text");
+      }
+    }
+  }
+  //ESTABLEZCO EL HOVER Y SU OPACIDAD
+  & div:hover > img {
+    opacity: 0.3;
+    transition: 0.5s;
+  }
+
+  & div:hover > span {
+    visibility: visible;
   }
 }
