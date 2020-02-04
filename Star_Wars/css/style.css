@@ -18,7 +18,6 @@ ul li {
   list-style: none;
   height: 300px;
   width: 10px;
-  background: white;
   margin: 0 10px;
 }
 ul li::before {
@@ -40,6 +39,30 @@ ul li::after {
   bottom: -30px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+ul li:nth-child(1) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00;
+}
+ul li:nth-child(2) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px yellow, 0px 0px 80px yellow, 0px 0px 80px yellow, 0px 0px 80px yellow;
+}
+ul li:nth-child(3) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px blue, 0px 0px 80px blue, 0px 0px 80px blue, 0px 0px 80px blue;
+}
+ul li:nth-child(4) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4;
+}
+ul li:nth-child(5) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px #880DFF, 0px 0px 80px #880DFF, 0px 0px 80px #880DFF, 0px 0px 80px #880DFF;
+}
+ul li:hover {
+  background: #9b9b9b;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */
