@@ -45,20 +45,20 @@ ul li:nth-child(1) {
   box-shadow: 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00;
 }
 ul li:nth-child(2) {
-  background: #ffd0d0;
+  background: #ffd0d7;
   box-shadow: 0px 0px 80px yellow, 0px 0px 80px yellow, 0px 0px 80px yellow, 0px 0px 80px yellow;
 }
 ul li:nth-child(3) {
-  background: #ffd0d0;
-  box-shadow: 0px 0px 80px blue, 0px 0px 80px blue, 0px 0px 80px blue, 0px 0px 80px blue;
+  background: #bffbbf;
+  box-shadow: 0px 0px 80px #0f0, 0px 0px 80px #0f0, 0px 0px 80px #0f0, 0px 0px 80px #0f0;
 }
 ul li:nth-child(4) {
-  background: #ffd0d0;
-  box-shadow: 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4, 0px 0px 80px #FF00E4;
+  background: #acffff;
+  box-shadow: 0px 0px 80px #00f, 0px 0px 80px #00f, 0px 0px 80px #00f, 0px 0px 80px #00f;
 }
 ul li:nth-child(5) {
-  background: #ffd0d0;
-  box-shadow: 0px 0px 80px #880DFF, 0px 0px 80px #880DFF, 0px 0px 80px #880DFF, 0px 0px 80px #880DFF;
+  background: #ffd0d8;
+  box-shadow: 0px 0px 80px #f0f, 0px 0px 80px #f0f, 0px 0px 80px #f0f, 0px 0px 80px #f0f;
 }
 ul li:hover {
   background: #9b9b9b;
