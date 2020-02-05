@@ -5,6 +5,9 @@ $azul_pagina: #1e2d3b;
 $blanco_pagina: #ffffff;
 $gris_pagina: #c6c6c6;
 $b_gris_pagina: #f7f7f7;
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -617,72 +620,221 @@ $Fila: 1, 2, 3;
       }
     }
 
-// UMBER &CO
-& #iconos_5{
-  & ul{
-    display: block;
-    margin: -3.9% 0% 0% 75%;
-    position: relative;
-display: flex;
-& li{
-  list-style: none;
-  display: block;
-  &:hover {
-    color: nth($amarillo_menu, 1);
-  }
-  & .fa{
-  font-size: 60px;
-  }
-  & #span_1{
-    display: block;
-    font-family: "Bebas Neue", cursive;
-    font-size: 28px;
-    margin: -100% 0% 0% 110%;
-  }
-  & #span_2{
-    display: block;
-    font-family: "Roboto", serif;
-    font-size: 28px;
-    margin: -20% 0% 0% 110%;
-
-  }
-}
-  }
-}
-  }
-}
-
-
-#contacto{
- 
-  & #sec_contacto{
-  
-  width: 98.9%;
-  height: 200vh;
-  display: flex;
-  flex-direction: column;
-
-  & #texto_contacto {
-    display: block;
-    margin-top: 5%;
-    & h1 {
-      font-family: "Oswald", sans-serif;
-      font-size: 65px;
-      color: $gris_pagina;
-      text-align: center;
-      margin-top: 3%;
-    }
-    & #linea_contacto {
-      display: inline-block;
-      padding: 0.3% 4%;
-      margin: 0% 0% 4% 46%;
-      background: $amarillo_menu;
-    }
-  }
-      & #mapa{
-       display: block;
-       margin: -1% 0% 0% 18%;
+    // UMBER &CO
+    & #iconos_5 {
+      & ul {
+        display: block;
+        margin: -3.9% 0% 0% 75%;
+        position: relative;
+        display: flex;
+        & li {
+          list-style: none;
+          display: block;
+          &:hover {
+            color: nth($amarillo_menu, 1);
+          }
+          & .fa {
+            font-size: 60px;
+          }
+          & #span_1 {
+            display: block;
+            font-family: "Bebas Neue", cursive;
+            font-size: 28px;
+            margin: -100% 0% 0% 110%;
+          }
+          & #span_2 {
+            display: block;
+            font-family: "Roboto", serif;
+            font-size: 28px;
+            margin: -20% 0% 0% 110%;
+          }
+        }
       }
+    }
   }
 }
+
+#contacto {
+  & #sec_contacto {
+    width: 98.9%;
+    height: 165vh;
+    display: flex;
+    flex-direction: column;
+
+    & #texto_contacto {
+      display: block;
+      margin-top: 5%;
+      & h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 65px;
+        color: $gris_pagina;
+        text-align: center;
+        margin-top: 3%;
+      }
+      & #linea_contacto {
+        display: inline-block;
+        padding: 0.3% 4%;
+        margin: 0% 0% 4% 46%;
+        background: $amarillo_menu;
+      }
+    }
+    & #mapa {
+      display: block;
+      margin: -1% 0% 0% 18%;
+    }
+
+    & #oficina_principal {
+      margin: 2% 0% 0% 60%;
+      & h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 25px;
+      }
+
+      & #dir {
+        margin: 1% 0% 0% 60%;
+
+        & p {
+          font-family: "Roboto";
+          font-size: 18px;
+        }
+      }
+      & #correo_e_inf {
+        margin: 0% 0% 0% 60%;
+
+        & p {
+          font-family: "Roboto";
+          font-size: 18px;
+        }
+      }
+    }
+    & #preguntas {
+      margin: -12% 0% 0% 18%;
+      font-family: "Roboto";
+      font-size: 18px;
+
+      & h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 28px;
+      }
+      & #texto_pregunta {
+        display: block;
+        margin: 2% 0% 0% 0%;
+
+        & p {
+          font-family: "Roboto";
+          font-size: 18px;
+        }
+      }
+    }
+
+    & #empleos {
+      margin: 8% 0% 0% 60%;
+
+      & h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 28px;
+      }
+      & #texto_empleos {
+        display: block;
+        margin: 2% 0% 0% 0%;
+
+        & p {
+          font-family: "Roboto";
+          font-size: 18px;
+        }
+      }
+    }
+    $blanco_boxtext: #f7f7f7;
+
+    & #formulario {
+      display: block;
+
+      & #nombre_span {
+        display: block;
+        margin: -10% 0% 0% 18%;
+        & #Nombre {
+          width: 30.4%;
+          background: $blanco_boxtext;
+          height: 3vh;
+
+          font-size: 16px;
+          border: 0;
+        }
+      }
+
+      & #email_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #email {
+          width: 30.4%;
+          height: 3vh;
+          font-size: 16px;
+          background: $blanco_boxtext;
+          border: 0;
+        }
+      }
+
+      & #asunto_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #asunto {
+          width: 30.4%;
+          font-size: 16px;
+          background: $blanco_boxtext;
+          border: 0;
+          height: 3vh;
+        }
+      }
+      & #mensaje_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #mensaje {
+          font-size: 16px;
+          background: $blanco_boxtext;
+          border: 0;
+        }
+      }
+
+      & #enviar_boton {
+        display: block;
+        margin: 0.5% 0% 0% 39.5%;
+        & #enviar {
+          background: $azul_pagina;
+          color: $blanco_pagina;
+          border: 0;
+          width: 6%;
+          font-family: "Roboto";
+          height: 4.5vh;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+
+      & #linea_final {
+        display: inline-block;
+        padding: 0.3% 3%;
+        margin: -50% 0% 4% 60%;
+        background: $amarillo_menu;
+      }
+      & #presupuesto {
+        display: block;
+        margin: -3.5% 0% 0% 60%;
+        & h1 {
+          font-family: "Roboto";
+          font-size: 30px;
+          color: $azul_pagina;
+        }
+
+        & #num {
+          & h1 {
+            font-family: "Roboto";
+            font-size: 30px;
+            color: $azul_pagina;
+          }
+        }
+      }
+    }
+  }
+}
+
 
