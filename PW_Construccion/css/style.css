@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Bree+Serif&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -8,11 +9,13 @@
 header {
   width: 100%;
   height: 20%;
+  z-index: 3;
 }
 
 #menu_fixed {
   position: fixed;
   width: 100%;
+  z-index: 6;
 }
 
 #logos {
@@ -68,11 +71,13 @@ body #video section {
   width: 100%;
   height: 100%;
   background: white;
+  position: relative;
 }
 body #video section video {
   width: 100%;
   object-fit: cover;
   height: 90vh;
+  z-index: -1;
 }
 body #video section h1 {
   margin: 0;
@@ -428,6 +433,7 @@ body #video section h1 span {
   height: 95%;
   display: block;
   opacity: 1;
+  z-index: -2;
 }
 #Proyectos .row div span {
   display: block;
@@ -461,6 +467,141 @@ body #video section h1 span {
   color: #c6c6c6;
   font-family: "Oswald";
   font-size: 70px;
+}
+#f_clientes #Clientes #iconos_1 {
+  display: block;
+  margin: 0px 0px 0px 15%;
+}
+#f_clientes #Clientes #iconos_1 ul {
+  position: relative;
+  display: flex;
+}
+#f_clientes #Clientes #iconos_1 ul > li {
+  list-style: none;
+  display: block;
+  font-family: "Bree Serif", serif;
+  font-size: 40px;
+}
+#f_clientes #Clientes #iconos_1 ul > li .fa {
+  font-size: 40px;
+  color: #555;
+  margin-left: -5%;
+}
+#f_clientes #Clientes #iconos_1 ul > li:hover .fa {
+  color: #edcd1f;
+  text-shadow: 0 0 15px #edcd1f;
+}
+#f_clientes #Clientes #iconos_2 ul {
+  display: block;
+  margin: -3.9% 0% 0% 30%;
+  position: relative;
+  display: flex;
+}
+#f_clientes #Clientes #iconos_2 ul li {
+  list-style: none;
+  display: block;
+  font-family: "Oswald", serif;
+  font-size: 40px;
+  color: #555;
+}
+#f_clientes #Clientes #iconos_2 ul li:hover {
+  color: #07eba4;
+}
+#f_clientes #Clientes #iconos_3 ul {
+  display: block;
+  margin: -3.9% 0% 0% 45%;
+  position: relative;
+  display: flex;
+}
+#f_clientes #Clientes #iconos_3 ul li {
+  list-style: none;
+  display: block;
+  font-family: "Oswald", serif;
+  font-size: 40px;
+  color: #555;
+}
+#f_clientes #Clientes #iconos_3 ul li:hover {
+  color: #3b5999;
+}
+#f_clientes #Clientes #iconos_3 ul li:hover .fa {
+  color: red;
+  text-shadow: 0 0 15px red;
+}
+#f_clientes #Clientes #iconos_4 ul {
+  display: block;
+  margin: -3.9% 0% 0% 60%;
+  position: relative;
+  display: flex;
+}
+#f_clientes #Clientes #iconos_4 ul li {
+  list-style: none;
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #555;
+}
+#f_clientes #Clientes #iconos_4 ul li:hover {
+  color: #e80ca9;
+}
+#f_clientes #Clientes #iconos_4 ul li span {
+  font-family: "Roboto", serif;
+  font-size: 38px;
+}
+#f_clientes #Clientes #iconos_5 ul {
+  display: block;
+  margin: -3.9% 0% 0% 75%;
+  position: relative;
+  display: flex;
+}
+#f_clientes #Clientes #iconos_5 ul li {
+  list-style: none;
+  display: block;
+}
+#f_clientes #Clientes #iconos_5 ul li:hover {
+  color: #edcd1f;
+}
+#f_clientes #Clientes #iconos_5 ul li .fa {
+  font-size: 60px;
+}
+#f_clientes #Clientes #iconos_5 ul li #span_1 {
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  font-size: 28px;
+  margin: -100% 0% 0% 110%;
+}
+#f_clientes #Clientes #iconos_5 ul li #span_2 {
+  display: block;
+  font-family: "Roboto", serif;
+  font-size: 28px;
+  margin: -20% 0% 0% 110%;
+}
+
+#contacto #sec_contacto {
+  width: 98.9%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+#contacto #sec_contacto #texto_contacto {
+  display: block;
+  margin-top: 5%;
+}
+#contacto #sec_contacto #texto_contacto h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 65px;
+  color: #c6c6c6;
+  text-align: center;
+  margin-top: 3%;
+}
+#contacto #sec_contacto #texto_contacto #linea_contacto {
+  display: inline-block;
+  padding: 0.3% 4%;
+  margin: 0% 0% 4% 46%;
+  background: #edcd1f;
+}
+#contacto #sec_contacto #mapa {
+  display: block;
+  margin: -1% 0% 0% 18%;
 }
 
 /*# sourceMappingURL=style.css.map */

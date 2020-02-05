@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Bree+Serif&display=swap");
 $amarillo_menu: #edcd1f;
 $azul_pagina: #1e2d3b;
 $blanco_pagina: #ffffff;
@@ -11,10 +12,12 @@ $b_gris_pagina: #f7f7f7;
 header {
   width: 100%;
   height: 20%;
+  z-index: 3;
 }
 #menu_fixed {
   position: fixed;
   width: 100%;
+  z-index: 6;
 }
 #logos {
   width: 22%;
@@ -77,12 +80,14 @@ body #video {
     width: 100%;
     height: 100%;
     background: white;
+    position: relative;
 
     //TAMAÑO DEL VIDEO
     & video {
       width: 100%;
       object-fit: cover;
       height: 90vh;
+      z-index: -1;
     }
 
     & h1 {
@@ -92,11 +97,9 @@ body #video {
       width: 50%;
       top: 50%;
       position: absolute;
-
       margin: 0% 0% 0% 25%;
       text-align: center;
       text-shadow: -2px -2px 2px $azul_pagina;
-
       & #flecha {
         display: block;
         & .fa {
@@ -466,6 +469,7 @@ body #video {
         //para convertir la imagen en tipo bloque
         display: block;
         opacity: 1;
+        z-index: -2;
       }
 
       & span {
@@ -498,6 +502,12 @@ body #video {
   }
 }
 
+$color1: #18191f;
+$color_azul: #00f3ff;
+$MedidaEnlace: 50px;
+$Colores: #00f3ff, red, greenyellow;
+$Fila: 1, 2, 3;
+
 #f_clientes {
   & #Clientes {
     width: 100%;
@@ -510,5 +520,169 @@ body #video {
         font-size: 70px;
       }
     }
+    //  TIPOX LOGO
+    & #iconos_1 {
+      display: block;
+      margin: 0px 0px 0px 15%;
+      & ul {
+        position: relative;
+        display: flex;
+
+        & > li {
+          list-style: none;
+          display: block;
+          font-family: "Bree Serif", serif;
+          font-size: 40px;
+          & .fa {
+            font-size: 40px;
+            color: #555;
+            margin-left: -5%;
+          }
+
+          &:hover .fa {
+            color: nth($amarillo_menu, 1);
+            //es para la sombra de el fa que cambie de color
+            text-shadow: 0 0 15px $amarillo_menu;
+          }
+        }
+      }
+    }
+
+    // EXCIPIA
+    & #iconos_2 {
+      & ul {
+        display: block;
+        margin: -3.9% 0% 0% 30%;
+        position: relative;
+        display: flex;
+        & li {
+          list-style: none;
+          display: block;
+          font-family: "Oswald", serif;
+          font-size: 40px;
+          color: #555;
+          &:hover {
+            color: nth(#07eba4, 1);
+          }
+        }
+      }
+    }
+
+    // VIDE
+    & #iconos_3 {
+      & ul {
+        display: block;
+        margin: -3.9% 0% 0% 45%;
+        position: relative;
+        display: flex;
+        & li {
+          list-style: none;
+          display: block;
+          font-family: "Oswald", serif;
+          font-size: 40px;
+          color: #555;
+          &:hover {
+            color: nth(#3b5999, 1);
+          }
+          //PARA CAMBIAR EL ICONO DE COLOR
+          &:hover .fa {
+            color: nth(red, 1);
+            text-shadow: 0 0 15px red;
+          }
+        }
+      }
+    }
+    // DEHOTEL
+    & #iconos_4 {
+      & ul {
+        display: block;
+        margin: -3.9% 0% 0% 60%;
+        position: relative;
+        display: flex;
+        & li {
+          list-style: none;
+          display: block;
+          font-family: "Bebas Neue", cursive;
+
+          font-size: 40px;
+          color: #555;
+          &:hover {
+            color: nth(#e80ca9, 1);
+          }
+          & span {
+            font-family: "Roboto", serif;
+            font-size: 38px;
+          }
+        }
+      }
+    }
+
+// UMBER &CO
+& #iconos_5{
+  & ul{
+    display: block;
+    margin: -3.9% 0% 0% 75%;
+    position: relative;
+display: flex;
+& li{
+  list-style: none;
+  display: block;
+  &:hover {
+    color: nth($amarillo_menu, 1);
+  }
+  & .fa{
+  font-size: 60px;
+  }
+  & #span_1{
+    display: block;
+    font-family: "Bebas Neue", cursive;
+    font-size: 28px;
+    margin: -100% 0% 0% 110%;
+  }
+  & #span_2{
+    display: block;
+    font-family: "Roboto", serif;
+    font-size: 28px;
+    margin: -20% 0% 0% 110%;
+
   }
 }
+  }
+}
+  }
+}
+
+
+#contacto{
+ 
+  & #sec_contacto{
+  
+  width: 98.9%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+
+  & #texto_contacto {
+    display: block;
+    margin-top: 5%;
+    & h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: 65px;
+      color: $gris_pagina;
+      text-align: center;
+      margin-top: 3%;
+    }
+    & #linea_contacto {
+      display: inline-block;
+      padding: 0.3% 4%;
+      margin: 0% 0% 4% 46%;
+      background: $amarillo_menu;
+    }
+  }
+      & #mapa{
+       display: block;
+       margin: -1% 0% 0% 18%;
+      }
+  }
+}
+
